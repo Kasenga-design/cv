@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Guillaume Kasenga Kalunga | Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guillaume Kasenga Kalunga – Aspiring Software Engineer portfolio and resume">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #E9C46A;
+    color: #333;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #264653, #2A9D8F);
+    color: white;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: auto;
+    animation: slideIn 1s ease forwards;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+header p {
+    max-width: 650px;
+    font-size: 1.1em;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile-pic {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    max-width: 180px;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 6px solid white;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    animation: zoomIn 1.2s ease forwards;
+}
+
+/* ===== SECTIONS ===== */
+main section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    color: #264653;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #2A9D8F;
+    display: block;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background-color: #FFFFFF;
+    color: #222;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s ease;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* ===== SKILLS ===== */
+.skills span {
+    display: inline-block;
+    background-color: #2A9D8F;
+    color: white;
+    padding: 10px 16px;
+    margin: 6px;
+    border-radius: 30px;
+    font-size: 0.9em;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills span:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideIn {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* ===== ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .profile-pic {
+        position: static;
+        display: block;
+        margin: 30px auto 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="profile.JPEG" alt="Guillaume Kasenga Kalunga" class="profile-pic">
+
+    <div class="header-content">
+        <h1>Guillaume Kasenga Kalunga</h1>
+        <h3>Aspiring Software Engineer</h3>
+        <p>
+            Motivated aspiring software engineer based in Johannesburg, South Africa.
+            Currently studying Software Engineering with a strong interest in building
+            practical applications, learning modern technologies, and continuously
+            improving problem-solving skills through hands-on projects.
+        </p>
+    </div>
+</header>
+
+<main>
+
+<section>
+    <h2>Contact Details</h2>
+    <article class="card">
+        <address>
+            <p><strong>Email:</strong> <a href="mailto:kasengakalunga@gmail.com">kasengakalunga@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+27681872453">068 187 2453</a></p>
+            <p><strong>Location:</strong> Johannesburg, South Africa</p>
+        </address>
+    </article>
+
+    <h2>Education</h2>
+    <article class="card">
+        <h3>BSc in Software Engineering (In Progress)</h3>
+        <p>
+            Completed first year of Computer Science and currently majoring in Software Engineering.
+            Gaining experience in programming, algorithms, and software development fundamentals.
+        </p>
+    </article>
+
+    <article class="card">
+        <h3>National Senior Certificate (Bachelor’s Pass)</h3>
+        <p><strong>Rand Tutorial College</strong></p>
+        <ul>
+            <li>Computer Application Technologies</li>
+            <li>Mathematical Literacy</li>
+            <li>Life Sciences</li>
+            <li>English Home Language</li>
+            <li>Afrikaans First Additional Language</li>
+            <li>Tourism</li>
+        </ul>
+    </article>
+
+    <h2>Skills</h2>
+    <article class="card skills">
+        <h3>Technical Skills</h3>
+        <span>Java (Basic)</span>
+        <span>C++ (Basic)</span>
+        <span>Linux</span>
+        <span>AWS (Basic)</span>
+        <span>Microsoft Office</span>
+
+        <h3 style="margin-top:15px;">Professional Skills</h3>
+        <span>Adaptable</span>
+        <span>Good Listener</span>
+        <span>Team Player</span>
+        <span>Strong Work Ethic</span>
+    </article>
+
+    <h2>Projects</h2>
+    <article class="card">
+        <h3>Programming Fundamentals Practice</h3>
+        <p>
+            Developed multiple Java and C++ console-based programs focusing on control structures,
+            loops, arrays, and basic algorithms to strengthen problem-solving and logical thinking skills.
+        </p>
+    </article>
+
+    <article class="card">
+        <h3>Linux & Cloud Fundamentals</h3>
+        <p>
+            Practiced Linux command-line usage and explored basic AWS services to understand operating
+            systems, file management, and cloud concepts.
+        </p>
+    </article>
+
+    <h2>Experience</h2>
+    <article class="card">
+        <ul>
+            <li>Worked as a cashier, handling customer transactions and cash management</li>
+            <li>Performed physical labor including wood cutting and gardening</li>
+            <li>Developed discipline, reliability, and a strong work ethic</li>
+        </ul>
+    </article>
+
+    <h2>Achievements & Extras</h2>
+    <article class="card">
+        <ul>
+            <li>Silver Medalist – Under 18 Soccer Team</li>
+            <li>Gold and Silver Medalist in 100m and 200m athletics events</li>
+            <li>Interests: Coding, repairing electronics, gaming, music, dance, and sports</li>
+            <li>Languages: English, Swahili, Basic French</li>
+        </ul>
+    </article>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2025 Guillaume Kasenga Kalunga</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+});
+
+document.querySelectorAll(".card").forEach(card => {
+    observer.observe(card);
+});
+</script>
+
+</body>
+</html>
